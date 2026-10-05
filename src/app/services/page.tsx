@@ -28,8 +28,8 @@ export default function ServicesPage() {
         <div className="shell">
           <SectionHeader
             label="What We Offer"
-            title="Complete Event Solutions"
-            description="From concept to execution, Shiv Ram Event delivers end-to-end event planning, management, and decoration services tailored to your needs."
+            title="What Services Does Shiv Ram Event Provide?"
+            description="Shiv Ram Event provides professional event planning, management, and premium decoration services in Ahmedabad. We specialize in corporate events, theme-based birthday parties, cultural programs, and wedding decorations."
           />
 
           <CardGrid>

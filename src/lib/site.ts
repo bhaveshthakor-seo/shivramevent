@@ -13,7 +13,7 @@ export const site = {
    * site later is a one-line change (or a NEXT_PUBLIC_SITE_URL env var).
    */
   url: (
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://shivramevent.vercel.app"
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://shivramevent-seven.vercel.app"
   ).replace(/\/$/, ""),
 
   name: "Shiv Ram Event",

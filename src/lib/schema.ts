@@ -1,4 +1,4 @@
-import { services } from "@/lib/content";
+import { services, faqs } from "@/lib/content";
 import { site } from "@/lib/site";
 
 /**
@@ -116,5 +116,21 @@ export function serviceSchema(slug: string) {
     provider: { "@id": businessId },
     areaServed: { "@type": "City", name: site.city },
     image: `${site.url}${service.image}`,
+  };
+}
+
+/** FAQ schema for answer engines. */
+export function faqSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 }

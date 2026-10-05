@@ -5,8 +5,11 @@ import { Button } from "@/components/ui/Button";
 import { CtaBanner } from "@/components/ui/CtaBanner";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { featuredEvents, services, testimonials } from "@/lib/content";
+import { featuredEvents, services, testimonials, faqs } from "@/lib/content";
 import { site } from "@/lib/site";
+import { FaqSection } from "@/components/ui/Faq";
+import { JsonLd } from "@/components/JsonLd";
+import { faqSchema } from "@/lib/schema";
 
 const heroStats = [
   { value: 500, suffix: "+", label: "Events Managed" },
@@ -18,6 +21,7 @@ const heroStats = [
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={faqSchema()} />
       {/* Hero — the agency's own black-and-gold balloon wall sits behind the
           same dark diagonal wash the legacy build used. */}
       <section className="relative flex min-h-[calc(100dvh-var(--spacing-header))] items-center overflow-hidden py-16 sm:py-20">
@@ -41,10 +45,10 @@ export default function HomePage() {
               Celebrations
             </h1>
             <p className="mb-8 max-w-[560px] text-base text-muted sm:text-[1.0625rem]">
-              Shiv Ram Event is a professional event management company in{" "}
+              <strong>What is Shiv Ram Event?</strong> We are a professional event management company based in{" "}
               {site.city}, offering complete event planning and decoration
-              services from weddings and corporate events to themed birthday
-              parties and baby showers.
+              services for weddings, corporate events, themed birthday
+              parties, and baby showers across Gujarat.
             </p>
             <div className="flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap min-[420px]:gap-4">
               <Button href="/contact">Book an Event</Button>
@@ -164,6 +168,18 @@ export default function HomePage() {
               Read All Testimonials
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Frequently Asked Questions */}
+      <section className="py-14 sm:py-20">
+        <div className="shell max-w-4xl">
+          <SectionHeader
+            label="Answers"
+            title="Frequently Asked Questions"
+            description="Find direct answers to common questions about our event management and decoration services in Ahmedabad."
+          />
+          <FaqSection faqs={faqs} />
         </div>
       </section>
 

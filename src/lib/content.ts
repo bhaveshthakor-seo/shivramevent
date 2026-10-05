@@ -330,3 +330,31 @@ export const eventTypes = [
   "Decoration Only",
   "Other",
 ] as const;
+
+export const faqs = [
+  {
+    question: "What is Shiv Ram Event?",
+    answer:
+      "Shiv Ram Event is a professional event management company based in Ahmedabad, specializing in weddings, corporate events, birthday parties, baby showers, and premium decoration services.",
+  },
+  {
+    question: "What services does Shiv Ram Event provide?",
+    answer:
+      "We provide end-to-end event planning, management, and premium decoration services. This includes corporate events, birthday parties, cultural programs, wedding planning, engagement setups, and grand entry arrangements.",
+  },
+  {
+    question: "Where does Shiv Ram Event provide event services?",
+    answer:
+      "We provide event management and decoration services primarily across Ahmedabad and the surrounding regions in Gujarat.",
+  },
+  {
+    question: "How do I book Shiv Ram Event for my celebration?",
+    answer:
+      "You can book our services by calling us directly at +91 9099020289, messaging us on WhatsApp, or filling out the contact form on our website to get a customized quote.",
+  },
+  {
+    question: "Why should I choose Shiv Ram Event?",
+    answer:
+      "Shiv Ram Event is trusted for its creativity, attention to detail, and stress-free execution. With over a decade of experience and a track record of 500+ successful events, we ensure high-quality decor and seamless coordination tailored to your vision.",
+  },
+];
