@@ -25,7 +25,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shivramevent.vercel.app"),
+  metadataBase: new URL("https://shivramevent-seven.vercel.app"),
 
   title: {
     default: "Shiv Ram Event | Best Event Management Company in Ahmedabad",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Shiv Ram Event",
-      url: "https://shivramevent.vercel.app",
+      url: "https://shivramevent-seven.vercel.app",
     },
   ],
 
